@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Feature Section Animation */
+@keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0 0);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  .animate-appear {
+    animation: appear 0.75s forwards;
+  }
+  
+/* Steps Section */
+  .vertical-timeline-element-icon svg{
+    width: 40px !important;
+    height: 40px !important;
+    margin-left: -20px !important;
+    margin-top: -20px !important;
+  }
